@@ -189,8 +189,7 @@ input {
   text-transform: uppercase;
 }
 
-.lede,
-.note {
+.lede {
   margin: 0;
   color: var(--muted);
   line-height: 1.45;
@@ -201,41 +200,13 @@ input {
   font-size: 0.94rem;
 }
 
-.summary-card,
 .selected-card {
   padding: 0.9rem;
   background: var(--panel-strong);
   border: 1px solid var(--border);
   border-radius: 16px;
-}
-
-.selected-card {
   border-color: var(--focus);
   border-width: 2px;
-}
-
-.coverage-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.65rem;
-  margin: 0 0 0.75rem;
-}
-
-.coverage-grid div {
-  padding: 0.6rem;
-  background: rgba(34, 27, 22, 0.04);
-  border-radius: 12px;
-}
-
-.coverage-grid dt {
-  color: var(--muted);
-  font-size: 0.75rem;
-}
-
-.coverage-grid dd {
-  margin: 0.2rem 0 0;
-  font-size: 1.35rem;
-  font-weight: 800;
 }
 
 .tier-filters {

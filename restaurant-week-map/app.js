@@ -32,10 +32,6 @@ const state = {
 };
 
 const elements = {
-  totalCount: document.getElementById("total-count"),
-  placedCount: document.getElementById("placed-count"),
-  unplacedCount: document.getElementById("unplaced-count"),
-  datasetNote: document.getElementById("dataset-note"),
   tierFilters: document.getElementById("tier-filters"),
   selectedRestaurant: document.getElementById("selected-restaurant"),
   unplacedList: document.getElementById("unplaced-list"),
@@ -83,13 +79,6 @@ function render() {
   const placed = state.restaurants.filter(isPlaced);
   const unplaced = state.restaurants.filter((restaurant) => !isPlaced(restaurant));
 
-  elements.totalCount.textContent = state.restaurants.length.toLocaleString();
-  elements.placedCount.textContent = placed.length.toLocaleString();
-  elements.unplacedCount.textContent = unplaced.length.toLocaleString();
-  const noteText = datasetNoteText();
-  elements.datasetNote.textContent = noteText;
-  elements.datasetNote.hidden = !noteText;
-
   renderTierFilters();
   renderMarkers(placed);
   renderUnplacedList(unplaced);
@@ -102,13 +91,6 @@ function render() {
   }
 }
 
-function datasetNoteText() {
-  if (state.restaurants.length === 0) {
-    return "No restaurants have been loaded yet. Add source records to restaurants.json.";
-  }
-  return "";
-}
-
 function renderTierFilters() {
   const counts = Object.fromEntries(Object.keys(TIER_CONFIG).map((tier) => [tier, 0]));
   for (const restaurant of state.restaurants.filter(isPlaced)) {
@@ -118,6 +100,8 @@ function renderTierFilters() {
 
   elements.tierFilters.innerHTML = "";
   for (const [tier, config] of Object.entries(TIER_CONFIG)) {
+    if (counts[tier] === 0) continue;
+
     const label = document.createElement("label");
     label.className = "tier-filter";
 
@@ -252,8 +236,7 @@ function renderEmptyMapState() {
 }
 
 function showLoadError(error) {
-  elements.datasetNote.textContent = `Could not load restaurants.json: ${error.message}`;
-  elements.unplacedList.innerHTML = "<li>Dataset failed to load.</li>";
+  elements.unplacedList.innerHTML = `<li>Could not load restaurants.json: ${escapeHtml(error.message)}</li>`;
   const emptyControl = L.control({ position: "topright" });
   emptyControl.onAdd = () => {
     const container = L.DomUtil.create("div", "empty-state-inner");
