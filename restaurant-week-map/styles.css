@@ -291,14 +291,6 @@ input {
   font-weight: 700;
 }
 
-.unplaced-list {
-  display: grid;
-  gap: 0.45rem;
-  margin: 0;
-  padding-left: 1.1rem;
-  color: var(--muted);
-}
-
 .restaurant-marker {
   display: grid;
   place-items: center;

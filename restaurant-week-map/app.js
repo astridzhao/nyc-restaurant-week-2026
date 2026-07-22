@@ -1,4 +1,5 @@
 const NYC_CENTER = [40.73061, -73.935242];
+const NYC_BOUNDS = L.latLngBounds([40.49, -74.27], [40.92, -73.68]);
 
 const TIER_CONFIG = {
   michelin_star: {
@@ -34,7 +35,6 @@ const state = {
 const elements = {
   tierFilters: document.getElementById("tier-filters"),
   selectedRestaurant: document.getElementById("selected-restaurant"),
-  unplacedList: document.getElementById("unplaced-list"),
 };
 
 init();
@@ -42,7 +42,10 @@ init();
 async function init() {
   state.map = L.map("map", {
     scrollWheelZoom: true,
-  }).setView(NYC_CENTER, 11);
+    minZoom: 10,
+    maxBounds: NYC_BOUNDS.pad(0.1),
+    maxBoundsViscosity: 1.0,
+  }).setView(NYC_CENTER, 12);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
@@ -77,16 +80,11 @@ function normalizeRestaurants(payload) {
 
 function render() {
   const placed = state.restaurants.filter(isPlaced);
-  const unplaced = state.restaurants.filter((restaurant) => !isPlaced(restaurant));
 
   renderTierFilters();
   renderMarkers(placed);
-  renderUnplacedList(unplaced);
 
-  if (placed.length > 0) {
-    const bounds = L.latLngBounds(placed.map((restaurant) => [restaurant.lat, restaurant.lng]));
-    state.map.fitBounds(bounds.pad(0.18), { maxZoom: 14 });
-  } else {
+  if (placed.length === 0) {
     renderEmptyMapState();
   }
 }
@@ -197,52 +195,26 @@ function renderSelectedRestaurant(restaurant) {
   `;
 }
 
-function renderUnplacedList(unplaced) {
-  elements.unplacedList.innerHTML = "";
-
-  if (unplaced.length === 0) {
-    const item = document.createElement("li");
-    item.textContent = "No unplaced records.";
-    elements.unplacedList.append(item);
-    return;
-  }
-
-  for (const restaurant of unplaced.slice(0, 20)) {
-    const item = document.createElement("li");
-    item.textContent = `${restaurant.name || "Unnamed restaurant"} — ${
-      restaurant.notes || restaurant.geocode_confidence || restaurant.status || "needs review"
-    }`;
-    elements.unplacedList.append(item);
-  }
-
-  if (unplaced.length > 20) {
-    const item = document.createElement("li");
-    item.textContent = `${unplaced.length - 20} more listed in restaurants.json.`;
-    elements.unplacedList.append(item);
-  }
-}
-
 function renderEmptyMapState() {
   const emptyControl = L.control({ position: "topright" });
   emptyControl.onAdd = () => {
     const container = L.DomUtil.create("div", "empty-state-inner");
     container.innerHTML = `
-      <h2>No placed restaurants yet</h2>
-      <p>Add records with <code>status: "placed"</code> and numeric coordinates to restaurants.json.</p>
+      <h2>No restaurants to show yet</h2>
+      <p>Check back soon — this map updates as new restaurants are added.</p>
     `;
     return container;
   };
   emptyControl.addTo(state.map);
 }
 
-function showLoadError(error) {
-  elements.unplacedList.innerHTML = `<li>Could not load restaurants.json: ${escapeHtml(error.message)}</li>`;
+function showLoadError() {
   const emptyControl = L.control({ position: "topright" });
   emptyControl.onAdd = () => {
     const container = L.DomUtil.create("div", "empty-state-inner");
     container.innerHTML = `
-      <h2>Dataset did not load</h2>
-      <p>Start a local server from restaurant-week-map, then open http://localhost:8000/.</p>
+      <h2>Couldn't load the restaurant list</h2>
+      <p>Please try refreshing the page.</p>
     `;
     return container;
   };
