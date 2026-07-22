@@ -1,0 +1,5563 @@
+{
+  "metadata": {
+    "event": "NYC Restaurant Week Summer 2026",
+    "event_dates": "2026-07-20 to 2026-08-16",
+    "last_updated": "2026-07-21",
+    "source_count": 622,
+    "notes": [
+      "This dataset covers 119 of ~622 source-list restaurants: 15 from an initial curated test batch (mixed boroughs/tiers), plus 104 from the official nyctourism.com/restaurant-week filtered listing for Chelsea, Chinatown, East Village, Koreatown, Noho, Soho, West Village, and Union Square (all Manhattan).",
+      "Populate the rest of this file from nyctourism.com/rw / OpenTable source data to reach full ~622-restaurant coverage.",
+      "Keep unplaced and needs-review restaurants in this dataset; the map only renders status: placed records with numeric lat/lng.",
+      "Several Michelin star / Bib Gourmand tier assignments (Hupo, Crown Shy, Dining Room at Gramercy Tavern, Dhamaka) are corroborated via secondary sources because guide.michelin.com returned a 403 on direct fetch during research — flagged in each restaurant own notes for manual double-check against the live Michelin Guide.",
+      "NARO is tagged bib_gourmand_or_critics_pick without holding a Michelin star/Bib Gourmand itself — included on the strength of nyctourism.com own Award-Winning editorial roundup; its geocode_confidence is matched (building-level) rather than verified.",
+      "A dedicated tier-verification pass (2026-07-21) re-checked all 104 neighborhood-batch restaurants against Michelin Guide NY and reputable 'best of NYC Restaurant Week 2026' roundups, upgrading 9: Tuome (michelin_star); Hav & Mar, HanGawi, Ishq, Markette, Momofuku Noodle Bar East Village, Pera SoHo, Balade, and Noreetuh (bib_gourmand_or_critics_pick). Restaurants like Pylos, Wallsé, and Perry Street were specifically checked and confirmed to have lost or never held a CURRENT star/Bib Gourmand (e.g. Wallsé lost its star in 2022, Perry Street in 2011) — their 'standard' tier reflects verified absence of a current distinction, not unchecked default.",
+      "OpenStreetMap Nominatim rate-limited several research agents mid-session; a number of restaurants were geocoded via the US Census Bureau Geocoder (geocoding.geo.census.gov) as a fallback instead, noted per-restaurant in geocode_source.",
+      "menu_url / reservation_url values pulled from nyctourism.com listings were not independently re-verified; spot-check before relying on them."
+    ]
+  },
+  "restaurants": [
+    {
+      "id": "gran-morsi",
+      "name": "Gran Morsi",
+      "neighborhood": "Tribeca",
+      "borough": "Manhattan",
+      "address": "22 Warren St., Manhattan, NY 10007",
+      "lat": 40.7143364,
+      "lng": -74.0077533,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/38779-GranMorsi-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/gran-morsi"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": null,
+      "status": "placed",
+      "notes": "Official listing shows $60 Dinner and $60 Sunday Dinner offers only (no lunch offer). NYC RW rule: dinner = 3 courses. Direct booking link could not be captured from the JS-rendered CTA; check granmorsi.com or call (212) 577-2725."
+    },
+    {
+      "id": "la-tete-dor",
+      "name": "La Tête d'Or",
+      "neighborhood": "Flatiron District",
+      "borough": "Manhattan",
+      "address": "318 Park Ave. South, Manhattan, NY 10010",
+      "lat": 40.7407207,
+      "lng": -73.9861,
+      "cuisine": "Steakhouse / French",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 60,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/49695-LaT%C3%AAted%E2%80%99Or-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/la-tete-dor"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": null,
+      "status": "placed",
+      "notes": "Daniel Boulud's first steakhouse, opened 2025. Official listing shows only a $60 Lunch offer, no dinner offer and no Sunday participation. Too new for a confirmed Michelin/critics accolade at time of research, so tier left as standard rather than guessed."
+    },
+    {
+      "id": "empellon",
+      "name": "Empellón",
+      "neighborhood": "Midtown East",
+      "borough": "Manhattan",
+      "address": "510 Madison Ave., Manhattan, NY 10022",
+      "lat": 40.759672,
+      "lng": -73.974396,
+      "cuisine": "Mexican",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/40491-Empellon-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/empellon"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "NYT critic Pete Wells awarded Empellón Midtown three stars; also a James Beard Award finalist for Best New Restaurant (per official NYC Restaurant Week listing description, corroborated by independent web search).",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": null,
+      "status": "placed",
+      "notes": "Official listing shows only a $45 Dinner offer, no lunch offer, and no Sunday participation."
+    },
+    {
+      "id": "wayan",
+      "name": "Wayan",
+      "neighborhood": "Nolita",
+      "borough": "Manhattan",
+      "address": "20 Spring St., Manhattan, NY 10012",
+      "lat": 40.7212364,
+      "lng": -73.995135,
+      "cuisine": "Indonesian / Asian Fusion",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/41480-Wayan-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/wayan"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/41480-Wayan-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/wayan"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": null,
+      "status": "placed",
+      "notes": "Official listing shows both a $30 Lunch/Sunday Brunch offer and a $60 Dinner offer, both available Sundays. Chef Cédric Vongerichten (son of Jean-Georges)."
+    },
+    {
+      "id": "henrys-end",
+      "name": "Henry's End",
+      "neighborhood": "Brooklyn Heights",
+      "borough": "Brooklyn",
+      "address": "72 Henry St., Brooklyn, NY 11201",
+      "lat": 40.6986971,
+      "lng": -73.9925774,
+      "cuisine": "American (New)",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/39730-Henry%27sEnd-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/henrys-end"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": null,
+      "status": "placed",
+      "notes": "50+ year Brooklyn Heights neighborhood institution known for seasonal game menu. No citable star-rating source found, so tier left as standard rather than guessed. Official listing shows $45 Dinner + $45 Sunday Dinner."
+    },
+    {
+      "id": "hupo",
+      "name": "Hupo",
+      "neighborhood": "Long Island City",
+      "borough": "Queens",
+      "address": "10-07 50th Ave., Queens, NY 11101",
+      "lat": 40.742822,
+      "lng": -73.9535987,
+      "cuisine": "Chinese (Szechuan)",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/48482-Hupo-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/hupo"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "Michelin Guide Bib Gourmand — held continuously since 2021.",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": null,
+      "status": "placed",
+      "notes": "Official listing shows $60 Dinner + $60 Sunday Dinner only. Bib Gourmand status corroborated via secondary sources (Hupo's own site, press coverage); Michelin's own restaurant page returned a 403 on direct fetch, so flag for manual double-check against guide.michelin.com."
+    },
+    {
+      "id": "le-pavillon",
+      "name": "Le Pavillon",
+      "neighborhood": "Midtown East",
+      "borough": "Manhattan",
+      "address": "1 Vanderbilt Ave., Manhattan, NY 10017",
+      "lat": 40.7529739,
+      "lng": -73.9785396,
+      "cuisine": "French",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 60,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/45628-LePavillon-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/le-pavillon/"
+        }
+      ],
+      "tier": "michelin_star",
+      "tier_source": "Michelin Guide NYC — one star.",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://lepavillonnyc.com",
+      "status": "placed",
+      "notes": "Official listing shows only a $60 Lunch offer; course count not stated so standard NYC RW lunch convention (2 courses) applied. No Sunday price line shown, so sunday_available is false rather than assumed. Michelin star status corroborated by guide.michelin.com restaurant page (One Star) and press coverage of Le Pavillon during Restaurant Week."
+    },
+    {
+      "id": "crown-shy",
+      "name": "Crown Shy",
+      "neighborhood": "Financial District",
+      "borough": "Manhattan",
+      "address": "70 Pine St., Manhattan, NY 10005",
+      "lat": 40.7064733,
+      "lng": -74.0077415,
+      "cuisine": "American",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/46520-CrownShy-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/crown-shy/"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/46520-CrownShy-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/crown-shy/"
+        }
+      ],
+      "tier": "michelin_star",
+      "tier_source": "Michelin Guide NYC — one star.",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.crownshy.nyc/",
+      "status": "placed",
+      "notes": "Official listing confirms $45 lunch and $60 dinner, both three courses; Sunday dinner ($60) listed but no Sunday lunch price shown, so sunday_available is true only on the dinner offer. Michelin one-star status confirmed via guide.michelin.com; a direct fetch of that page returned a 403 in the research session, so status was corroborated via search-engine excerpts plus secondary press coverage — flag for manual double-check."
+    },
+    {
+      "id": "francie",
+      "name": "Francie",
+      "neighborhood": "Williamsburg",
+      "borough": "Brooklyn",
+      "address": "136 Broadway, Brooklyn, NY 11249",
+      "lat": 40.710234,
+      "lng": -73.964052,
+      "cuisine": "French / Italian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/44609-Francie-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/francie/"
+        }
+      ],
+      "tier": "michelin_star",
+      "tier_source": "Michelin Guide NYC — one star.",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.franciebrooklyn.com",
+      "status": "placed",
+      "notes": "Official listing shows a $60 Dinner offer only (no lunch), not Saturdays; course count not stated so standard NYC RW dinner convention (3 courses) applied. No Sunday price line shown, so sunday_available is false. Michelin one-star status confirmed via Wikipedia's List of Michelin-starred restaurants in New York City and multiple press descriptions of Francie as Michelin-starred."
+    },
+    {
+      "id": "dining-room-at-gramercy-tavern",
+      "name": "The Dining Room at Gramercy Tavern",
+      "neighborhood": "Flatiron District",
+      "borough": "Manhattan",
+      "address": "42 E. 20th St., Manhattan, NY 10003",
+      "lat": 40.738384,
+      "lng": -73.9884222,
+      "cuisine": "American",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 60,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/46438-DiningRoomatGramercyTavern-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/the-dining-room-at-gramercy-tavern/"
+        }
+      ],
+      "tier": "michelin_star",
+      "tier_source": "Michelin Guide NYC — one star (The Dining Room at Gramercy Tavern).",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.gramercytavern.com/reservations/",
+      "status": "placed",
+      "notes": "Official listing shows a $60 lunch offer plus a $60 Sunday lunch/brunch; course count not stated so standard NYC RW lunch convention (2 courses) applied. Michelin one-star status corroborated via Time Out's roundup of Michelin-rated Restaurant Week spots; a direct fetch of the guide.michelin.com page returned a 403 in the research session — flag for manual double-check."
+    },
+    {
+      "id": "tanoreen",
+      "name": "Tanoreen",
+      "neighborhood": "Bay Ridge",
+      "borough": "Brooklyn",
+      "address": "7523 3rd Ave., Brooklyn, NY 11209",
+      "lat": 40.6308023,
+      "lng": -74.0277826,
+      "cuisine": "Middle Eastern / Palestinian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/tanoreen/"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/tanoreen/"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "Michelin Guide NYC — Bib Gourmand.",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.tanoreen.com/",
+      "status": "placed",
+      "notes": "Official listing confirms $30 lunch and $60 dinner, with a $60 Sunday dinner also listed (no Sunday lunch price shown); course counts not stated so standard NYC RW convention (2 lunch / 3 dinner) applied. Bib Gourmand status confirmed via guide.michelin.com restaurant page for Tanoreen and corroborated by Time Out's roundup of Michelin-rated Restaurant Week picks."
+    },
+    {
+      "id": "nami-nori-williamsburg",
+      "name": "Nami Nori",
+      "neighborhood": "Williamsburg",
+      "borough": "Brooklyn",
+      "address": "236 N. 12th St., Brooklyn, NY 11211",
+      "lat": 40.7191766,
+      "lng": -73.9528855,
+      "cuisine": "Japanese",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/articles/treat-yourself-to-top-nyc-restaurant-week-gems/"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "Michelin Guide NYC — Bib Gourmand.",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.naminori.us/reservations",
+      "status": "placed",
+      "notes": "Participation and offer ($30 lunch with corn rib appetizer + choice of temaki set) confirmed via nyctourism.com's own 'Top Tier NYC Restaurant Week Spots' editorial article, which also names Nami Nori a Michelin Bib Gourmand winner. A dedicated nyctourism.com/restaurant-week/ listing page for this Williamsburg location specifically could not be located (404), so exact weekday range and Sunday availability were not independently confirmed — sunday_available set to false pending confirmation. Bib Gourmand status further corroborated by guide.michelin.com restaurant page for Nami Nori."
+    },
+    {
+      "id": "coqodaq",
+      "name": "Coqodaq",
+      "neighborhood": "Flatiron District",
+      "borough": "Manhattan",
+      "address": "12 E. 22nd St., Manhattan, NY 10010",
+      "lat": 40.7400751,
+      "lng": -73.9887486,
+      "cuisine": "Korean Fried Chicken",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 60,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/50349-Coqodaq-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/coqodaq/"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "Michelin Guide NYC — Bib Gourmand.",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.coqodaq.com",
+      "status": "placed",
+      "notes": "Official listing shows a $60 Lunch offer only (no dinner), running through Aug 31, 2026; course count not stated so standard NYC RW lunch convention (2 courses) applied. No Sunday price line shown, so sunday_available is false. Bib Gourmand status confirmed via guide.michelin.com restaurant page for Coqodaq and a Michelin-guide feature article; Coqodaq is the fried-chicken sibling of one-Michelin-star Cote Korean Steakhouse, reportedly sitting out Restaurant Week this cycle."
+    },
+    {
+      "id": "dhamaka",
+      "name": "Dhamaka",
+      "neighborhood": "Lower East Side",
+      "borough": "Manhattan",
+      "address": "Essex Market, 119 Delancey St., Store #34, Manhattan, NY 10002",
+      "lat": 40.718235,
+      "lng": -73.9880781,
+      "cuisine": "Indian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/47772-Dhamaka-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/dhamaka/"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "Michelin Guide NYC — Bib Gourmand.",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": null,
+      "status": "placed",
+      "notes": "Official listing shows a $60 Dinner offer only (no lunch); course count not stated so standard NYC RW dinner convention (3 courses) applied. 'Sundays are optional' language appears on the listing but no Sunday price line shown, so sunday_available is false. Bib Gourmand status corroborated via James Beard Award coverage and press pieces identifying Dhamaka as a Michelin Bib Gourmand pick; a direct fetch of the guide.michelin.com restaurant page was not completed in the research session (search-engine excerpts used instead) — flag for manual double-check."
+    },
+    {
+      "id": "naro",
+      "name": "NARO",
+      "neighborhood": "Midtown / Rockefeller Center",
+      "borough": "Manhattan",
+      "address": "610 Fifth Ave., Manhattan, NY 10020",
+      "lat": 40.7581247,
+      "lng": -73.9777361,
+      "cuisine": "Korean",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/48763-Naro-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/naro/"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/48763-Naro-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/naro/"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "NYC Tourism editorial pick — \"Top Tier NYC Restaurant Week Spots\" (Award-Winning Restaurants).",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/rw/",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.opentable.com/r/naro-new-york",
+      "status": "placed",
+      "notes": "NARO does not itself hold a Michelin star or Bib Gourmand (its sibling restaurant Atomix, from the same chef-owners, holds two Michelin stars); included here as a critics'-pick on the strength of its own nyctourism.com listing (confirming $45 lunch / $60 dinner, Sun-Fri) plus its inclusion as an 'Award-Winning' highlight in nyctourism.com's own official editorial roundup of top NYC Restaurant Week 2026 picks. Geocoding matched the building address (610 Fifth Ave./Rockefeller Center) but resolved to a retail-tenant point rather than the restaurant itself, so confidence is 'matched' rather than 'verified'."
+    },
+    {
+      "id": "mokyo",
+      "name": "Mokyo",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "109 St. Marks Pl, New York, NY 10009",
+      "lat": 40.7272206,
+      "lng": -73.9838784,
+      "cuisine": "Korean",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/mokyo"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/mokyo",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.mokyony.com",
+      "status": "placed",
+      "notes": "Course count not stated on page; used NYC RW convention (3 for dinner). No separate lunch offer listed."
+    },
+    {
+      "id": "roeys",
+      "name": "Roey's",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "1 Perry St, New York, NY 10014",
+      "lat": 40.7359626,
+      "lng": -74.000926,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 30,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/roeys"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/roeys",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.roeysnyc.com",
+      "status": "placed",
+      "notes": "Course count not stated on page; used NYC RW convention (3 for dinner). No separate lunch offer listed."
+    },
+    {
+      "id": "hav-mar",
+      "name": "Hav & Mar",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "245 Eleventh Ave, New York, NY 10001",
+      "lat": 40.7509895,
+      "lng": -74.0057562,
+      "cuisine": "Seafood",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/hav-mar"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "Time Out New York — featured pick, '21 Best Menus For NYC Restaurant Week Summer 2026.'",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/hav-mar",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://havandmar.com",
+      "status": "placed",
+      "notes": "Course count not stated on page; used NYC RW convention (3 for dinner). No separate lunch offer listed. Quick Michelin/best-of check did not turn up a citable star or Bib Gourmand listing, so tier left standard."
+    },
+    {
+      "id": "askili-orchard",
+      "name": "Askili Orchard",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "401 Sixth Ave, New York, NY 10014",
+      "lat": 40.7334356,
+      "lng": -73.9999276,
+      "cuisine": "Eastern European",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/askili-orchard"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/askili-orchard"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/askili-orchard",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://askiliorchard.com",
+      "status": "placed",
+      "notes": "Course count not stated on page; used NYC RW convention (2 lunch / 3 dinner)."
+    },
+    {
+      "id": "bananas",
+      "name": "Bananas",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "174 First Ave, New York, NY 10009",
+      "lat": 40.7325758,
+      "lng": -73.9797924,
+      "cuisine": "American (New)",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/bananas"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "approximate",
+      "source_url": "https://www.nyctourism.com/restaurant-week/bananas",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://bananasrestaurant.com",
+      "status": "placed",
+      "notes": "Nominatim only matched the 'First Avenue Loop' road segment near Stuy Town rather than the exact house number 174; coordinates are approximate for this block of First Ave. Course count not stated on page; used NYC RW convention (3 for dinner)."
+    },
+    {
+      "id": "jazba",
+      "name": "Jazba",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "207 Second Ave, New York, NY 10003",
+      "lat": 40.7316143,
+      "lng": -73.9857249,
+      "cuisine": "Indian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/jazba"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/jazba"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/jazba",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.jazbanyc.com",
+      "status": "placed",
+      "notes": "Course count not stated on page; used NYC RW convention (2 lunch / 3 dinner). Page noted Sunday participation should be confirmed directly with restaurant."
+    },
+    {
+      "id": "hearth",
+      "name": "Hearth",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "403 E. 12th St, New York, NY 10009",
+      "lat": 40.7299792,
+      "lng": -73.9832142,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/hearth"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/hearth"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/hearth",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.restauranthearth.com",
+      "status": "placed",
+      "notes": "Page listed Sunday dinner but no Sunday lunch, so lunch sunday_available set false. Course count not stated on page; used NYC RW convention. Quick Michelin/best-of check did not turn up a citable star or Bib Gourmand listing for this Restaurant Week cycle, so tier left standard."
+    },
+    {
+      "id": "a-pasta-bar",
+      "name": "A Pasta Bar",
+      "neighborhood": "Soho",
+      "borough": "Manhattan",
+      "address": "330 West Broadway, New York, NY 10013",
+      "lat": 40.722187,
+      "lng": -74.0040623,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/a-pasta-bar"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/a-pasta-bar"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/a-pasta-bar",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://apastabar.com",
+      "status": "placed",
+      "notes": "Course count not stated on page; used NYC RW convention (2 lunch / 3 dinner)."
+    },
+    {
+      "id": "pastai",
+      "name": "Pastai",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "186 Ninth Ave, New York, NY 10011",
+      "lat": 40.7453862,
+      "lng": -74.0018217,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/pastai"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/pastai",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://pastainyc.com",
+      "status": "placed",
+      "notes": "Page only listed a $60 dinner offer (including Sunday lunch/brunch and Sunday dinner at $60); no separate weekday lunch price found. Course count not stated on page; used NYC RW convention (3 for dinner)."
+    },
+    {
+      "id": "bar-bianchi",
+      "name": "Bar Bianchi",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "5 Avenue A, New York, NY 10009",
+      "lat": 40.7225091,
+      "lng": -73.9862947,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/bar-bianchi"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/bar-bianchi"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/bar-bianchi",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.barbianchinyc.com",
+      "status": "placed",
+      "notes": "Course count not stated on page; used NYC RW convention (2 lunch / 3 dinner)."
+    },
+    {
+      "id": "miriam-west-village",
+      "name": "Miriam West Village",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "140 Seventh Ave South, New York, NY 10014",
+      "lat": 40.734709,
+      "lng": -74.0023992,
+      "cuisine": "Mediterranean",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/miriam-west-village"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/miriam-west-village"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/miriam-west-village",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://westvillage.miriamrestaurant.com",
+      "status": "placed",
+      "notes": "Page did not explicitly confirm Sunday availability for this location (general RW rule states Sundays optional per restaurant); left sunday_available as false pending direct confirmation. Course count not stated on page; used NYC RW convention."
+    },
+    {
+      "id": "tucci",
+      "name": "Tucci",
+      "neighborhood": "Noho",
+      "borough": "Manhattan",
+      "address": "643 Broadway, New York, NY 10012",
+      "lat": 40.7267174,
+      "lng": -73.9958817,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/tucci"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/tucci",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.tuccinyc.com",
+      "status": "placed",
+      "notes": "Page confirms dinner-only participation (no lunch offer). Course count not stated on page; used NYC RW convention (3 for dinner)."
+    },
+    {
+      "id": "golden-unicorn",
+      "name": "Golden Unicorn",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "address": "18 East Broadway, New York, NY 10002",
+      "lat": 40.7136218,
+      "lng": -73.9970903,
+      "cuisine": "Chinese",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/golden-unicorn"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/golden-unicorn"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/golden-unicorn",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.goldenunicornrestaurant.com",
+      "status": "placed",
+      "notes": "Page explicitly noted Sunday participation is not standard here and should be verified directly with the restaurant; sunday_available set false accordingly. Course count not stated on page; used NYC RW convention. Michelin Guide has a listing page for this restaurant but it reflects a 'Plate' (recommended) designation, not a Star or Bib Gourmand, so tier left standard."
+    },
+    {
+      "id": "champers-social-club",
+      "name": "Champers Social Club",
+      "neighborhood": "Soho",
+      "borough": "Manhattan",
+      "address": "39-1/2 Crosby St, Manhattan, NY 10012",
+      "lat": 40.7211616,
+      "lng": -73.9991124,
+      "cuisine": "French",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/49943-ChampersSocialClub-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/champers-social-club"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/49943-ChampersSocialClub-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/champers-social-club"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/champers-social-club",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.champerssocialclub.com",
+      "status": "placed",
+      "notes": "Page lists address as '39-1/2 Crosby St'; Nominatim matched the nearest whole-number address (39 Crosby St), so coordinates are approximate but should place the pin correctly on the block."
+    },
+    {
+      "id": "travelers-poets-and-friends",
+      "name": "Travelers Poets & Friends",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "457 Sixth Ave, Manhattan, NY 10011",
+      "lat": 40.7352516,
+      "lng": -73.9986822,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/travelers-poets-and-friends"
+        },
+        {
+          "meal": "dinner",
+          "price": 30,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/travelers-poets-and-friends"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/travelers-poets-and-friends",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://travelerspoetsandfriends.com",
+      "status": "placed",
+      "notes": "Page lists both lunch and dinner (plus Sunday lunch/brunch and Sunday dinner) uniformly priced at $30; page's date range spans through Aug 31, wider than the Jul 20-Aug 16 window given."
+    },
+    {
+      "id": "bar-primi-penn-district",
+      "name": "Bar Primi - Penn District",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "349 W. 33rd St, Manhattan, NY 10001",
+      "lat": 40.7521835,
+      "lng": -73.9952899,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/bar-primi-penn-district"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/bar-primi-penn-district",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.barprimi.com/location/bar-primi-penn-district",
+      "status": "placed",
+      "notes": "Only a lunch offer (incl. Sunday lunch/brunch) was found; no dinner prix-fixe listed on the page."
+    },
+    {
+      "id": "ci-siamo",
+      "name": "Ci Siamo",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "385 Ninth Ave, Manhattan, NY 10001",
+      "lat": 40.7528942,
+      "lng": -73.9987297,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/46090-CiSiamo-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/ci-siamo"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/ci-siamo",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.cisiamonyc.com",
+      "status": "placed",
+      "notes": "Only a lunch offer (incl. Sunday lunch/brunch) was found, no dinner prix-fixe listed. Nominatim's result for this address is labeled under a different business name ('Zou Zou's') in OSM's data, but the street number/address matches, so the pin should be correct. Checked guide.michelin.com and a Michelin/Bib Gourmand web search; no citable Michelin listing found, so tier left standard."
+    },
+    {
+      "id": "abc-kitchen",
+      "name": "ABC Kitchen",
+      "neighborhood": "Union Square",
+      "borough": "Manhattan",
+      "address": "35 E. 18th St, Manhattan, NY 10003",
+      "lat": 40.7379154,
+      "lng": -73.9894885,
+      "cuisine": "American (New)",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/abc-kitchen"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/abc-kitchen"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/abc-kitchen",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.abckitchen.nyc",
+      "status": "placed",
+      "notes": "ABC Kitchen is by chef Jean-Georges Vongerichten but a web search found no current Michelin star/Bib Gourmand listing for ABC Kitchen itself (a separate restaurant, abcV, in the same building does appear in the Michelin Guide) — tier left standard."
+    },
+    {
+      "id": "poppy",
+      "name": "Poppy",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "505 E. 12th St, Manhattan, NY 10009",
+      "lat": 40.7290335,
+      "lng": -73.9808423,
+      "cuisine": "American (New)",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/50474-Poppy-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/poppy"
+        },
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/50474-Poppy-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/poppy"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/poppy",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://poppyeastvillage.com",
+      "status": "placed",
+      "notes": "Weekday offer is dinner only ($45); the $30 offer is specifically a Sunday lunch/brunch (no weekday lunch listed), so it's flagged as a Sunday-only 'lunch' entry rather than a standard Mon-Fri lunch."
+    },
+    {
+      "id": "cuna-nyc",
+      "name": "Cuna NYC",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "The Standard East Village, 25 Cooper Square, Manhattan, NY 10003",
+      "lat": 40.727834,
+      "lng": -73.9907398,
+      "cuisine": "Mexican",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/cuna-nyc"
+        },
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/cuna-nyc"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/cuna-nyc",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.cuna.nyc",
+      "status": "placed",
+      "notes": "Weekday offer is dinner only ($60); the $45 offer is specifically Sunday lunch/brunch, no weekday lunch listed. Address is inside The Standard East Village hotel at 25 Cooper Square."
+    },
+    {
+      "id": "naks",
+      "name": "Naks",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "201 First Ave, Manhattan, NY 10003",
+      "lat": 40.7334929,
+      "lng": -73.9802161,
+      "cuisine": "Filipino",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/naks"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "approximate",
+      "source_url": "https://www.nyctourism.com/restaurant-week/naks",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.naks.nyc",
+      "status": "placed",
+      "notes": "Page states dinner is offered Monday-Saturday (unusual vs. the typical 'Saturdays excluded' convention) plus Sunday dinner — included Saturday in days array per the page. Course count not stated explicitly; used 3-course dinner convention. Nominatim's top match for 201 First Ave resolved to a 'First Avenue Loop' feature in Stuy Town rather than a precise street-address point, so coordinates are approximate."
+    },
+    {
+      "id": "city-winery",
+      "name": "City Winery",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "25 Eleventh Ave, Manhattan, NY 10011",
+      "lat": 40.7431021,
+      "lng": -74.009291,
+      "cuisine": "American (New)",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/city-winery"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/city-winery"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/city-winery",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://citywinery.com/pages/locations/new-york-city",
+      "status": "placed",
+      "notes": null
+    },
+    {
+      "id": "the-dolar-shop-hot-pot",
+      "name": "The Dolar Shop Hot Pot",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "55 Third Ave, Manhattan, NY 10003",
+      "lat": 40.7311047,
+      "lng": -73.9885452,
+      "cuisine": "Chinese",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/49349-DolarShopHotPot-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/the-dolar-shop-hot-pot"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/49349-DolarShopHotPot-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/the-dolar-shop-hot-pot"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/the-dolar-shop-hot-pot",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.dolarshop.com/location/manhattan-location",
+      "status": "placed",
+      "notes": "Page did not explicitly confirm whether Sunday service is offered for this location, so sunday_available is set to false pending confirmation; course counts assumed per NYC RW convention (not explicitly stated on page)."
+    },
+    {
+      "id": "cathedrale-restaurant",
+      "name": "Cathédrale",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "112 E. 11th St, Manhattan, NY 10003",
+      "lat": 40.731407,
+      "lng": -73.9894371,
+      "cuisine": "French",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/cathedrale-restaurant"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/cathedrale-restaurant",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://cathedraleny.com",
+      "status": "placed",
+      "notes": "Nominatim's top match for 112 E. 11th St resolves to the Moxy Hotel at that address; the street address matches so the pin should be correctly placed. Checked Michelin/Bib Gourmand via web search — no citable listing found for 'Cathédrale', tier left standard."
+    },
+    {
+      "id": "qanoon",
+      "name": "Qanoon",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "180 Ninth Ave, Manhattan, NY 10011",
+      "lat": 40.7452195,
+      "lng": -74.0020025,
+      "cuisine": "Middle Eastern",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/qanoon"
+        },
+        {
+          "meal": "lunch",
+          "price": 60,
+          "courses": 2,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/qanoon"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/qanoon",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.qanoonnyc.com",
+      "status": "placed",
+      "notes": "Weekday offer is dinner only ($60); the Sunday lunch/brunch ($60) is a Sunday-only offering, no weekday lunch listed. Course count not explicitly stated; used convention."
+    },
+    {
+      "id": "morandi",
+      "name": "Morandi",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "211 Waverly Pl, Manhattan, NY 10014",
+      "lat": 40.735431,
+      "lng": -74.001552,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/morandi"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/morandi",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.morandiny.com",
+      "status": "placed",
+      "notes": "Page states Morandi only participates in weeks 4-6 (Aug 10-31), i.e. it does not open its Restaurant Week offer until Aug 10, so it is not available for the full Jul 20-Aug 16 window given. Only a $30 lunch offer was listed (no dinner); Sunday availability not confirmed, so sunday_available is set to false pending confirmation. Course count not explicitly stated; used convention."
+    },
+    {
+      "id": "markette",
+      "name": "Markette",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "326 Seventh Ave, Manhattan, NY 10001",
+      "lat": 40.7475291,
+      "lng": -73.9933791,
+      "cuisine": "Modern European",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/markette"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "Named a top pick in Forbes and Time Out New York roundups of NYC Restaurant Week Summer 2026.",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/markette",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.marketterestaurant.com",
+      "status": "placed",
+      "notes": "Page listed only a Dinner offer (no lunch); course count not stated explicitly, defaulted to convention. Michelin/best-of status not quickly confirmable, left as standard."
+    },
+    {
+      "id": "chelsea-ristorante",
+      "name": "Chelsea Ristorante",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "108 Eighth Ave, Manhattan, NY 10011",
+      "lat": 40.7406167,
+      "lng": -74.0015564,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/chelsea-ristorante"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/chelsea-ristorante"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/chelsea-ristorante",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://chrnyc.com",
+      "status": "placed",
+      "notes": "Page indicated participation through August 31 (six weeks), longer than the July 20-Aug 16 window in this dataset's scope; course count defaulted to convention."
+    },
+    {
+      "id": "rosemarys-west-village",
+      "name": "Rosemary's West Village",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "18 Greenwich Ave, Manhattan, NY 10011",
+      "lat": 40.7348164,
+      "lng": -73.9998903,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/rosemarys-west-village"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/rosemarys-west-village",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.rosemarysnyc.com/location/rosemarys-west-village",
+      "status": "placed",
+      "notes": "No lunch offer listed, dinner only. Page text mentioned 'Monday-Saturday' for dinner but site-wide rule states Saturdays are excluded from RW pricing; course count defaulted to convention."
+    },
+    {
+      "id": "gyu-kaku-japanese-bbq-east-village",
+      "name": "Gyu-Kaku Japanese BBQ - East Village",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "34 Cooper Square, Manhattan, NY 10003",
+      "lat": 40.7280672,
+      "lng": -73.9909003,
+      "cuisine": "Japanese / Sushi",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/44896-Gyu-KakuJapaneseBBQ-EastVillage-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/gyu-kaku-japanese-bbq-east-village"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/44896-Gyu-KakuJapaneseBBQ-EastVillage-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/gyu-kaku-japanese-bbq-east-village"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/gyu-kaku-japanese-bbq-east-village",
+      "last_verified": "2026-07-21",
+      "reservation_url": null,
+      "status": "placed",
+      "notes": "Course count not stated explicitly, defaulted to convention."
+    },
+    {
+      "id": "boucherie-west-village",
+      "name": "Boucherie West Village",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "99 Seventh Ave South, Manhattan, NY 10014",
+      "lat": 40.7330542,
+      "lng": -74.0029005,
+      "cuisine": "French",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/boucherie-west-village"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/boucherie-west-village"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/boucherie-west-village",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.boucherieus.com/location/boucherie-west-village",
+      "status": "placed",
+      "notes": "Page did not list distinct Sunday line items (unlike most other listings), so Sunday availability could not be confirmed and was set to false; course count defaulted to convention."
+    },
+    {
+      "id": "mamo-restaurant",
+      "name": "Mamo",
+      "neighborhood": "Soho",
+      "borough": "Manhattan",
+      "address": "323 West Broadway, Manhattan, NY 10013",
+      "lat": 40.7218781,
+      "lng": -74.0038495,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/mamo-restaurant"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/mamo-restaurant"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/mamo-restaurant",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://mamorestaurant.com",
+      "status": "placed",
+      "notes": "Executive chef reported to have prior Michelin-starred experience elsewhere, but no citable current Michelin/best-of listing found quickly for Mamo itself; left as standard. Course count defaulted to convention."
+    },
+    {
+      "id": "pylos",
+      "name": "Pylos",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "128 E. 7th St, Manhattan, NY 10009",
+      "lat": 40.7260649,
+      "lng": -73.984149,
+      "cuisine": "Greek",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/pylos"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/pylos"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/pylos",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://pylosrestaurant.com",
+      "status": "placed",
+      "notes": "Pylos appears in the Michelin Guide's NYC restaurant directory listing, but its current Bib Gourmand/star status could not be quickly and definitively confirmed (guide.michelin.com blocked automated fetch); left as standard per instructions not to rabbit-hole. Page listed six weeks of participation (through Aug 31); course count defaulted to convention."
+    },
+    {
+      "id": "la-pecora-bianca-soho",
+      "name": "La Pecora Bianca SoHo",
+      "neighborhood": "Soho",
+      "borough": "Manhattan",
+      "address": "54 Prince St, Manhattan, NY 10012",
+      "lat": 40.723501,
+      "lng": -73.9963078,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/la-pecora-bianca-soho"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/la-pecora-bianca-soho"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/la-pecora-bianca-soho",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.lapecorabianca.com/location/soho",
+      "status": "placed",
+      "notes": "Page listed a Sunday Dinner offer but no separate Sunday Lunch/Brunch line item, so Sunday lunch availability set to false; course count defaulted to convention."
+    },
+    {
+      "id": "noodle-bar-east-village",
+      "name": "Momofuku Noodle Bar",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "171 First Ave, Manhattan, NY 10003",
+      "lat": 40.7337893,
+      "lng": -73.9806688,
+      "cuisine": "Asian Fusion",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/44128-MomofukuNoodleBar-EastVillage-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/momofuku-noodle-bar-east-village"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/44128-MomofukuNoodleBar-EastVillage-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/momofuku-noodle-bar-east-village"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "Michelin Guide New York — Bib Gourmand.",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "approximate",
+      "source_url": "https://www.nyctourism.com/restaurant-week/momofuku-noodle-bar-east-village",
+      "last_verified": "2026-07-21",
+      "reservation_url": null,
+      "status": "placed",
+      "notes": "Given slug 'noodle-bar-east-village' 404'd on nyctourism.com; data was pulled from the working slug 'momofuku-noodle-bar-east-village' instead (used as source_url). Nominatim matched the address to a nearby road segment (First Avenue Loop) rather than the exact building, so coordinates are approximate. Page listed six weeks of participation (through Aug 31); course count defaulted to convention."
+    },
+    {
+      "id": "cha-cha-tang",
+      "name": "Cha Cha Tang",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "257 Sixth Ave, Manhattan, NY 10014",
+      "lat": 40.7286859,
+      "lng": -74.0027734,
+      "cuisine": "Chinese",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/cha-cha-tang"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/cha-cha-tang",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.chachatang.com",
+      "status": "placed",
+      "notes": "No standard weekday lunch offer listed, only Sunday Lunch/Brunch ($45) plus dinner; page listed six weeks of participation (through Aug 31); course count defaulted to convention."
+    },
+    {
+      "id": "ayza-wine-and-chocolate-bar",
+      "name": "Ayza",
+      "neighborhood": "Koreatown",
+      "borough": "Manhattan",
+      "address": "11 W. 31st St, Manhattan, NY 10001",
+      "lat": 40.746825,
+      "lng": -73.986408,
+      "cuisine": "American (New)",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/49515-AyzaWine%26ChocolateBar-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/ayza-wine-and-chocolate-bar"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/ayza-wine-and-chocolate-bar",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://ayzanyc.com",
+      "status": "placed",
+      "notes": "Dinner-only participation, no lunch offer. Page listed extended participation window (through Sept 6); course count defaulted to convention."
+    },
+    {
+      "id": "marsanne",
+      "name": "Marsanne",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "233 Eighth Ave, Manhattan, NY 10011",
+      "lat": 40.7446042,
+      "lng": -73.9992657,
+      "cuisine": "Mediterranean",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/marsanne"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/marsanne"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "approximate",
+      "source_url": "https://www.nyctourism.com/restaurant-week/marsanne",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://marsannenyc.com",
+      "status": "placed",
+      "notes": "Nominatim matched this address to a nearby business (Foragers Market) at the same street number rather than Marsanne itself, so treat coordinates as approximate though street-address-accurate. No Sunday Lunch line item found, only Sunday Dinner. Page listed six weeks of participation (through Aug 31); course count defaulted to convention."
+    },
+    {
+      "id": "the-dutch",
+      "name": "The Dutch",
+      "neighborhood": "Soho",
+      "borough": "Manhattan",
+      "address": "131 Sullivan St, Manhattan, NY 10012",
+      "lat": 40.7265855,
+      "lng": -74.0021074,
+      "cuisine": "American (New)",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/the-dutch"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/the-dutch"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/the-dutch",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.thedutchnyc.com",
+      "status": "placed",
+      "notes": "No Sunday Lunch line item found, only Sunday Dinner; Michelin Bib Gourmand history could not be quickly/definitively confirmed for the current 2026 guide, left as standard. Course count defaulted to convention."
+    },
+    {
+      "id": "fish-cheeks",
+      "name": "Fish Cheeks",
+      "neighborhood": "Noho",
+      "borough": "Manhattan",
+      "address": "55 Bond St, Manhattan, NY 10012",
+      "lat": 40.7257377,
+      "lng": -73.9927035,
+      "cuisine": "Thai",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/fish-cheeks"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/fish-cheeks"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/fish-cheeks",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.fishcheeksnyc.com",
+      "status": "placed",
+      "notes": "Page did not list a restaurant-specific Sunday offer, so Sunday availability left as unconfirmed (general RW policy makes Sunday optional per restaurant). Course counts follow NYC RW convention (2 lunch / 3 dinner), not explicitly stated on page."
+    },
+    {
+      "id": "mission-ceviche-union-square",
+      "name": "Mission Ceviche - Union Square",
+      "neighborhood": "Union Square",
+      "borough": "Manhattan",
+      "address": "7 E. 17th St, Manhattan, NY 10003",
+      "lat": 40.7377871,
+      "lng": -73.9916862,
+      "cuisine": "Peruvian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/mission-ceviche-union-square"
+        },
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/mission-ceviche-union-square"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/mission-ceviche-union-square"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/mission-ceviche-union-square",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://missionceviche.com/locations",
+      "status": "placed",
+      "notes": "Sunday brunch is priced separately at $45 (vs $30 weekday lunch), listed here as its own offer restricted to Sunday. Dinner ($60) applies both weekdays and Sunday at the same price. Course counts follow NYC RW convention, not explicitly stated on page."
+    },
+    {
+      "id": "felice-on-hudson",
+      "name": "Felice on Hudson",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "615 Hudson St, Manhattan, NY 10014",
+      "lat": 40.7378223,
+      "lng": -74.005822,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/felice-on-hudson"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/felice-on-hudson"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/felice-on-hudson",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.felicerestaurants.com/felice-hudson",
+      "status": "placed",
+      "notes": "Sunday dinner offered at same $45 price as weekday dinner. No Sunday lunch listed. Course counts follow NYC RW convention, not explicitly stated on page."
+    },
+    {
+      "id": "rafs",
+      "name": "Raf's",
+      "neighborhood": "Noho",
+      "borough": "Manhattan",
+      "address": "290 Elizabeth St, Manhattan, NY 10012",
+      "lat": 40.7246884,
+      "lng": -73.9931323,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/rafs"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/rafs",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.rafsnewyork.com",
+      "status": "placed",
+      "notes": "Only a lunch prix-fixe was listed on the page (no dinner offer found); Sunday lunch/brunch offered at same $45 price. Course count follows NYC RW convention, not explicitly stated on page."
+    },
+    {
+      "id": "wan-waan",
+      "name": "Wan Waan",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "200 Eighth Ave, Manhattan, NY 10011",
+      "lat": 40.7434622,
+      "lng": -73.9994588,
+      "cuisine": "Thai",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/wan-waan"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/wan-waan"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/wan-waan",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://wannyc.com",
+      "status": "placed",
+      "notes": "Both lunch and dinner offered at same price on weekdays and Sunday. Course counts follow NYC RW convention, not explicitly stated on page."
+    },
+    {
+      "id": "tuome",
+      "name": "Tuome",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "536 E. 5th St, Manhattan, NY 10009",
+      "lat": 40.7240023,
+      "lng": -73.9829652,
+      "cuisine": "American (New)",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/tuome"
+        }
+      ],
+      "tier": "michelin_star",
+      "tier_source": "Michelin Guide New York — One Michelin Star (Chef Thomas Chen).",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/tuome",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.tuomenyc.com",
+      "status": "placed",
+      "notes": "Only dinner ($60) prix-fixe listed; page did not confirm restaurant-specific Sunday participation, so left as unconfirmed. A quick Michelin/best-of check did not turn up a citable current Bib Gourmand or star listing, so tier kept as standard. Course count follows NYC RW convention, not explicitly stated on page."
+    },
+    {
+      "id": "le-b",
+      "name": "Le B.",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "283 W. 12th St, Manhattan, NY 10014",
+      "lat": 40.7376406,
+      "lng": -74.0040126,
+      "cuisine": "French",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/le-b"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/le-b",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://lebnyc.com",
+      "status": "placed",
+      "notes": "Only dinner ($60) prix-fixe listed; no lunch offer found. Restaurant-specific Sunday participation not confirmed on page. Course count follows NYC RW convention, not explicitly stated on page."
+    },
+    {
+      "id": "suprema-provisions",
+      "name": "Suprema Provisions",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "305 Bleecker St, Manhattan, NY 10014",
+      "lat": 40.732540549714,
+      "lng": -74.003659655697,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/suprema-provisions"
+        },
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/suprema-provisions"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/suprema-provisions",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.supremanyc.com",
+      "status": "placed",
+      "notes": "Sunday brunch ($30) is a separate offer from weekday dinner; weekday-only lunch not listed."
+    },
+    {
+      "id": "alice",
+      "name": "Alice",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "126 W. 13th St, Manhattan, NY 10011",
+      "lat": 40.7370964071,
+      "lng": -73.998515197156,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/alice"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/alice",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://alicenyc.com",
+      "status": "placed",
+      "notes": "Only dinner ($45) offer listed, no lunch."
+    },
+    {
+      "id": "lure-fishbar",
+      "name": "Lure Fishbar",
+      "neighborhood": "Soho",
+      "borough": "Manhattan",
+      "address": "142 Mercer St, Manhattan, NY 10012",
+      "lat": 40.72469376794,
+      "lng": -73.998442087275,
+      "cuisine": "Seafood",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/lure-fishbar"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/lure-fishbar"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/lure-fishbar",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.lurefishbar.com/location/lure-fishbar-new-york",
+      "status": "placed",
+      "notes": "Sunday dinner offered at same $60 price as weekday; no Sunday lunch listed."
+    },
+    {
+      "id": "hasaki",
+      "name": "Hasaki",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "210 E. 9th St, Manhattan, NY 10003",
+      "lat": 40.729760912134,
+      "lng": -73.988726711574,
+      "cuisine": "Japanese / Sushi",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/hasaki"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/hasaki",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.hasakinyc.com",
+      "status": "placed",
+      "notes": "Only dinner ($60) offer listed; restaurant-specific Sunday participation not confirmed on page. A quick Michelin/best-of check did not turn up a citable current listing, so tier kept as standard."
+    },
+    {
+      "id": "el-coco-chelsea",
+      "name": "El Coco - Chelsea",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "202 Eighth Ave, Manhattan, NY 10011",
+      "lat": 40.74356729761,
+      "lng": -73.999656701014,
+      "cuisine": "Mexican",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/el-coco-chelsea"
+        },
+        {
+          "meal": "dinner",
+          "price": 30,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/el-coco-chelsea"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/el-coco-chelsea",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://elcocony.com",
+      "status": "placed",
+      "notes": "All meals (lunch, dinner, Sunday lunch/brunch and Sunday dinner) priced at a flat $30, per page."
+    },
+    {
+      "id": "gaonnuri",
+      "name": "Gaonnuri",
+      "neighborhood": "Koreatown",
+      "borough": "Manhattan",
+      "address": "1250 Broadway (enter at 32nd St.), 39th fl., Manhattan, NY 10001",
+      "lat": 40.747586118543,
+      "lng": -73.988220758162,
+      "cuisine": "Korean",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/gaonnuri"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "approximate",
+      "source_url": "https://www.nyctourism.com/restaurant-week/gaonnuri",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.gaonnurinyc.com",
+      "status": "placed",
+      "notes": "Coordinates are for the street-level building entrance (1250 Broadway); restaurant itself is on the 39th floor, entered from 32nd St. Sunday dinner offered at same $60 price as weekday. Page explicitly confirms this restaurant participates during all four Restaurant Week weeks (July 20 - August 16), matching the event window."
+    },
+    {
+      "id": "ofcorsica",
+      "name": "ofCorsica",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "Pier 57, 25 Eleventh Ave., New York, NY 10011",
+      "lat": 40.743989,
+      "lng": -74.008647,
+      "cuisine": "Mediterranean",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/50414-ofCorsica-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/ofcorsica"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/50414-ofCorsica-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/ofcorsica"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim rate-limited)",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/ofcorsica",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://ofcorsicanyc.com",
+      "status": "placed",
+      "notes": "Page's Sunday note is a generic 'Sundays are optional' disclaimer with no specific Sunday offer/pricing listed, so Sunday availability treated as unconfirmed (false)."
+    },
+    {
+      "id": "yakiniku-gen-east-village",
+      "name": "Yakiniku Gen - East Village",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "218 E. 9th St., New York, NY 10003",
+      "lat": 40.729707,
+      "lng": -73.988601,
+      "cuisine": "Japanese / Sushi",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 60,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/51271-YakinikuGen-EastVillage-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/yakiniku-gen-east-village"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/51271-YakinikuGen-EastVillage-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/yakiniku-gen-east-village"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim rate-limited)",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/yakiniku-gen-east-village",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://yakinikugen.com",
+      "status": "placed",
+      "notes": "Weeks 1-6 (Jul 20-Aug 31); Saturdays excluded. Sunday lunch/brunch and Sunday dinner both offered at the same $60 price as weekdays."
+    },
+    {
+      "id": "pera-soho",
+      "name": "Pera SoHo",
+      "neighborhood": "Soho",
+      "borough": "Manhattan",
+      "address": "54 Thompson St., New York, NY 10012",
+      "lat": 40.723893,
+      "lng": -74.00332,
+      "cuisine": "Mediterranean",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/38407-PeraSoHo-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/pera-soho"
+        },
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/38407-PeraSoHo-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/pera-soho"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/38407-PeraSoHo-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/pera-soho"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "Michelin Guide New York — Bib Gourmand.",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/pera-soho",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.pera-soho.com",
+      "status": "placed",
+      "notes": "Sunday lunch/brunch is priced separately at $30 (vs $45 weekday lunch); represented as its own offer restricted to Sunday. Sunday dinner matches the $60 weekday dinner price. Weeks 1-4, Saturdays excluded."
+    },
+    {
+      "id": "balade",
+      "name": "Balade",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "208 First Ave., New York, NY 10009",
+      "lat": 40.730382,
+      "lng": -73.983195,
+      "cuisine": "Middle Eastern",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/48315-Balade-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/balade"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/48315-Balade-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/balade"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "Michelin Guide New York — Bib Gourmand.",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim rate-limited/wrong match)",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/balade",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.baladerestaurants.com",
+      "status": "placed",
+      "notes": "Weeks 1-6 (Jul 20-Aug 31), Saturdays excluded; uniform $45 price across lunch, dinner, and Sunday."
+    },
+    {
+      "id": "bottino",
+      "name": "Bottino",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "246 Tenth Ave., New York, NY 10001",
+      "lat": 40.748615,
+      "lng": -74.00341,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/bottino"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/bottino"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim rate-limited/wrong match)",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/bottino",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.bottinonyc.com",
+      "status": "placed",
+      "notes": "Weeks 1-3 only (Jul 20-Aug 9). Saturdays excluded; Sunday dinner offered (optional participation) at same $60 price, but no Sunday lunch offer was listed. No menu PDF was provided on the page."
+    },
+    {
+      "id": "lafayette",
+      "name": "Lafayette",
+      "neighborhood": "Noho",
+      "borough": "Manhattan",
+      "address": "380 Lafayette St., New York, NY 10003",
+      "lat": 40.727609,
+      "lng": -73.99379,
+      "cuisine": "French",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/37827-Lafayette-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/lafayette"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/37827-Lafayette-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/lafayette"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/lafayette",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.lafayetteny.com",
+      "status": "placed",
+      "notes": "Weeks 1-4 (Jul 20-Aug 16); Saturdays excluded; Sunday dinner offered at the same $60 price. A quick search did not turn up a confirmable current (2026) Michelin Bib Gourmand listing, so tier kept as standard."
+    },
+    {
+      "id": "jack-and-charlies-no-118",
+      "name": "Jack & Charlie's No. 118",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "118 Greenwich Ave., New York, NY 10011",
+      "lat": 40.738674,
+      "lng": -74.00227,
+      "cuisine": "American (New)",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/jack-and-charlies-no-118"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/jack-and-charlies-no-118",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.jackandcharlies118.com",
+      "status": "placed",
+      "notes": "Dinner-only Restaurant Week offer; all 4 weeks (Jul 20-Aug 16). Saturdays excluded; the page gives only a generic 'Sundays optional' disclaimer with no specific Sunday offer, so Sunday availability treated as unconfirmed (false). No menu PDF was provided."
+    },
+    {
+      "id": "zoi-mediterranean-cuisine",
+      "name": "Zoì Mediterranean NoMad",
+      "neighborhood": "Koreatown",
+      "borough": "Manhattan",
+      "address": "19 W. 31st St., New York, NY 10001",
+      "lat": 40.747218,
+      "lng": -73.986997,
+      "cuisine": "Mediterranean",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/49733-Zo%C3%ACMediterraneanNoMad-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/zoi-mediterranean-cuisine"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/49733-Zo%C3%ACMediterraneanNoMad-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/zoi-mediterranean-cuisine"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/49733-Zo%C3%ACMediterraneanNoMad-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/zoi-mediterranean-cuisine"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/zoi-mediterranean-cuisine",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.zoinomad.com",
+      "status": "placed",
+      "notes": "Sunday dinner is priced separately at $45 (vs $60 weekday dinner); represented as its own offer restricted to Sunday. Sunday lunch/brunch matches the $30 weekday lunch price. Weeks 1-6, Saturdays excluded."
+    },
+    {
+      "id": "nudibranch",
+      "name": "Nudibranch",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "125 First Ave., New York, NY 10003",
+      "lat": 40.727387,
+      "lng": -73.985551,
+      "cuisine": "Korean",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/46309-Nudibranch-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/nudibranch"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim rate-limited/wrong match)",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/nudibranch",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://nudibranchnyc.com",
+      "status": "placed",
+      "notes": "Dinner-only offer, weeks 1-6 (Jul 20-Aug 31); Saturdays excluded, Sunday dinner offered at the same $60 price. Quick search found Nudibranch mentioned in Michelin Guide NYC coverage/Restaurant Week content but no citable Bib Gourmand or starred listing, so tier kept as standard."
+    },
+    {
+      "id": "plado-tasting-bar",
+      "name": "Plado Tasting Bar",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "192 E. 2nd St., New York, NY 10009",
+      "lat": 40.722157,
+      "lng": -73.983607,
+      "cuisine": "Mediterranean",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/plado-tasting-bar"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/plado-tasting-bar"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim rate-limited)",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/plado-tasting-bar",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://pladohospitality.com",
+      "status": "placed",
+      "notes": "Weeks 1-6 (Jul 20-Aug 31), Saturdays excluded; uniform $45 price across lunch, dinner, and Sunday. No menu PDF was provided on the page."
+    },
+    {
+      "id": "yakiniku-toraji-an",
+      "name": "Yakiniku Toraji An",
+      "neighborhood": "Chinatown",
+      "borough": "Manhattan",
+      "address": "18 Elizabeth St., New York, NY 10013",
+      "lat": 40.715922,
+      "lng": -73.997284,
+      "cuisine": "Japanese / Sushi",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/51247-YakinikuTorajiAn-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/yakiniku-toraji-an"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/51247-YakinikuTorajiAn-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/yakiniku-toraji-an"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim rate-limited)",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/yakiniku-toraji-an",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://torajiny.com",
+      "status": "placed",
+      "notes": "Weeks 1-6 (Jul 20-Aug 31), Saturdays excluded; Sunday lunch and Sunday dinner both match weekday pricing."
+    },
+    {
+      "id": "la-boca",
+      "name": "La Boca",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "Faena New York, 500 W. 18th St., New York, NY 10011",
+      "lat": 40.744625,
+      "lng": -74.006489,
+      "cuisine": "Argentinian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 60,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/51304-LaBoca-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/la-boca"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim rate-limited)",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/la-boca",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.faena.com/new-york/dining/la-boca-at-faena-by-francis-mallmann",
+      "status": "placed",
+      "notes": "Page lists only a $60 lunch Restaurant Week offer for all 4 weeks (Jul 20-Aug 16); no dinner Restaurant Week pricing or explicit Sunday offer was found, despite the restaurant serving dinner normally. Checked for Michelin recognition given chef Francis Mallmann's profile but found no citable Michelin/Bib Gourmand listing for this NYC location, so tier kept as standard."
+    },
+    {
+      "id": "moono",
+      "name": "Moono",
+      "neighborhood": "Koreatown",
+      "borough": "Manhattan",
+      "address": "29 E. 32nd St., New York, NY 10016",
+      "lat": 40.746497,
+      "lng": -73.983793,
+      "cuisine": "Korean",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/48991-Moono-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/moono"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim rate-limited)",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/moono",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.moononyc.com",
+      "status": "placed",
+      "notes": "Dinner-only offer, weeks 1-6 (Jul 20-Aug 31); Saturdays excluded; Sunday dinner offered at same $60 price. The restaurant's card description references its chef also running Michelin-starred Jua — that star belongs to Jua, not Moono, so Moono's tier is kept as standard rather than inferred from Jua's recognition."
+    },
+    {
+      "id": "petite-boucherie",
+      "name": "Petite Boucherie",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "14 Christopher St, New York, NY 10014",
+      "lat": 40.7338779,
+      "lng": -74.0004371,
+      "cuisine": "French",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/petite-boucherie"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/petite-boucherie"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim (via Photon geocoder, Nominatim rate-limited)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/petite-boucherie",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.boucherieus.com/location/boucherie-petite-boucherie-bistro",
+      "status": "placed",
+      "notes": "Sunday availability not explicitly confirmed on the nyctourism page (states Saturdays excluded, Sundays generally optional but not itemized for this restaurant); treated as not confirmed."
+    },
+    {
+      "id": "indochine",
+      "name": "Indochine",
+      "neighborhood": "Noho",
+      "borough": "Manhattan",
+      "address": "430 Lafayette St, New York, NY 10003",
+      "lat": 40.72928,
+      "lng": -73.9924535,
+      "cuisine": "Vietnamese",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/indochine"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim (via Photon geocoder, Nominatim rate-limited)",
+      "geocode_confidence": "approximate",
+      "source_url": "https://www.nyctourism.com/restaurant-week/indochine",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.indochinenyc.com",
+      "status": "placed",
+      "notes": "Page indicates dinner-only offer available Weeks 1-2 (July 20-Aug 2) only, not the full July 20-Aug 16 window; Sunday availability not confirmed. Geocode matched to building at this address (tagged as 'Colonnade Row' landmark) rather than a business-named point, so marked approximate."
+    },
+    {
+      "id": "bocca-di-bacco-chelsea",
+      "name": "Bocca Di Bacco—Chelsea",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "169 Ninth Ave, New York, NY 10011",
+      "lat": 40.7446092,
+      "lng": -74.0029169,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/bocca-di-bacco-chelsea"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/bocca-di-bacco-chelsea"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim (via Photon geocoder, Nominatim rate-limited)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/bocca-di-bacco-chelsea",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.boccadibacconyc.com/location/bocca-di-bacco-chelsea",
+      "status": "placed",
+      "notes": "Matched exact house number/street."
+    },
+    {
+      "id": "bobo",
+      "name": "Bobo",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "181 W. 10th St, New York, NY 10014",
+      "lat": 40.7344098,
+      "lng": -74.002602,
+      "cuisine": "French",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/bobo"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim (via Photon geocoder, Nominatim rate-limited)",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/bobo",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.bobonyc.com",
+      "status": "placed",
+      "notes": "Geocode matched directly to the named business 'Bobo' at this address."
+    },
+    {
+      "id": "cull-pistol-oyster-bar",
+      "name": "Cull & Pistol Oyster Bar",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "75 Ninth Ave, New York, NY 10011",
+      "lat": 40.7420513,
+      "lng": -74.0048973,
+      "cuisine": "Seafood",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/cull-pistol-oyster-bar"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/cull-pistol-oyster-bar"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim (via Photon geocoder, Nominatim rate-limited)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/cull-pistol-oyster-bar",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.cullandpistol.com",
+      "status": "placed",
+      "notes": "Address is inside Chelsea Market (75 9th Ave); geocode point corresponds to the Chelsea Market building."
+    },
+    {
+      "id": "noreetuh",
+      "name": "Noreetuh",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "128 First Ave, New York, NY 10009",
+      "lat": 40.7273102,
+      "lng": -73.9852896,
+      "cuisine": "Hawaiian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/noreetuh"
+        },
+        {
+          "meal": "lunch",
+          "price": 60,
+          "courses": 2,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/noreetuh"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "Michelin Guide New York — Bib Gourmand (added 2025).",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim (via Photon geocoder, Nominatim rate-limited)",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/noreetuh",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.noreetuh.com",
+      "status": "placed",
+      "notes": "The $60 'lunch' offer is a Sunday Lunch/Brunch only (not available Mon-Fri). Geocode matched directly to the named business."
+    },
+    {
+      "id": "san-carlo-osteria-piemonte",
+      "name": "San Carlo",
+      "neighborhood": "Soho",
+      "borough": "Manhattan",
+      "address": "90 Thompson St, New York, NY 10012",
+      "lat": 40.7251488,
+      "lng": -74.0022186,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/san-carlo-osteria-piemonte"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/san-carlo-osteria-piemonte"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim (via Photon geocoder, Nominatim rate-limited)",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/san-carlo-osteria-piemonte",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.sancarlonyc.com",
+      "status": "placed",
+      "notes": "Page listed participation window as extending to Sept 6, well beyond the July 20-Aug 16 window in scope, but offers still apply within that window. Geocode matched directly to the named business."
+    },
+    {
+      "id": "the-noortwyck",
+      "name": "The Noortwyck",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "289 Bleecker St, New York, NY 10014",
+      "lat": 40.7321528,
+      "lng": -74.0033037,
+      "cuisine": "American (New)",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/the-noortwyck"
+        },
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/the-noortwyck"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim (via Photon geocoder, Nominatim rate-limited)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/the-noortwyck",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.thenoortwyck.com",
+      "status": "placed",
+      "notes": "The $45 'lunch' offer is Sunday Lunch/Brunch only (not offered Mon-Fri). Geocode matched to generic building record at the house number, not a business-named point."
+    },
+    {
+      "id": "abc-cocina",
+      "name": "ABC Cocina",
+      "neighborhood": "Union Square",
+      "borough": "Manhattan",
+      "address": "38 E. 19th St, New York, NY 10003",
+      "lat": 40.7380048,
+      "lng": -73.9892506,
+      "cuisine": "Latin American",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/abc-cocina"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/abc-cocina"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim (via Photon geocoder, Nominatim rate-limited)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/abc-cocina",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.abccocina.nyc",
+      "status": "placed",
+      "notes": "No Sunday lunch offer was listed on the page (only Sunday Dinner), so lunch sunday_available set false. Geocode matched to generic building record at the house number."
+    },
+    {
+      "id": "via-13",
+      "name": "Via 13",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "140 W. 13th St, New York, NY 10011",
+      "lat": 40.7372924,
+      "lng": -73.9991162,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/via-13"
+        },
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/via-13"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim (via Photon geocoder, Nominatim rate-limited)",
+      "geocode_confidence": "approximate",
+      "source_url": "https://www.nyctourism.com/restaurant-week/via-13",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://via13nyc.com",
+      "status": "placed",
+      "notes": "The $30 'lunch' offer is Sunday Lunch/Brunch only (not offered Mon-Fri). Geocoder returned a match tagged with a former tenant name ('Sotto 13') at this exact house number/street, so marked approximate though address matches."
+    },
+    {
+      "id": "wallse",
+      "name": "Wallsé",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "344 W. 11th St, New York, NY 10014",
+      "lat": 40.7354186,
+      "lng": -74.0082138,
+      "cuisine": "Austrian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/wallse"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim (via Photon geocoder, Nominatim rate-limited)",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/wallse",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.wallse.com",
+      "status": "placed",
+      "notes": "Wallsé held a Michelin star for many years but public reporting indicates it lost its star (around the 2022 NYC Michelin Guide); could not quickly confirm a current 2026 star or Bib Gourmand listing via guide.michelin.com (page returned 403), so tier is conservatively left as standard rather than assuming past reputation. Sunday availability not explicitly confirmed on the nyctourism page."
+    },
+    {
+      "id": "soogil",
+      "name": "Soogil",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "108 E. 4th St, New York, NY 10003",
+      "lat": 40.7255807,
+      "lng": -73.9882731,
+      "cuisine": "Korean",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/soogil"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim (via Photon geocoder, Nominatim rate-limited)",
+      "geocode_confidence": "approximate",
+      "source_url": "https://www.nyctourism.com/restaurant-week/soogil",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.soogil.com",
+      "status": "placed",
+      "notes": "No lunch prix-fixe offer listed on the page — dinner only. Geocoder returned a match tagged with a different business name ('Benemon') at this exact house number/street, so marked approximate though address matches."
+    },
+    {
+      "id": "manuela",
+      "name": "Manuela",
+      "neighborhood": "Soho",
+      "borough": "Manhattan",
+      "address": "130 Prince St, New York, NY 10012",
+      "lat": 40.725385,
+      "lng": -74.000397,
+      "cuisine": "American (New)",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/manuela"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "OpenStreetMap Nominatim (via Photon geocoder, Nominatim rate-limited)",
+      "geocode_confidence": "verified",
+      "source_url": "https://www.nyctourism.com/restaurant-week/manuela",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://manuela-nyc.com",
+      "status": "placed",
+      "notes": "No dinner prix-fixe offer listed on the page — lunch only. Sunday availability described as 'at restaurant discretion,' not explicitly confirmed, so left false. Geocode matched directly to the named business."
+    },
+    {
+      "id": "la-contenta-oeste",
+      "name": "La Contenta Oeste",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "78 W. 11th St., Manhattan, NY, 10011",
+      "lat": 40.735038,
+      "lng": -73.997601,
+      "cuisine": "Mexican",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/la-contenta-oeste"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/la-contenta-oeste",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://lacontentanyc.com",
+      "status": "placed",
+      "notes": "Page listed only a $45 dinner offer; Saturdays excluded per general RW terms, but no explicit Sunday-dinner line item was shown for this restaurant so sunday_available left false. Course count not stated; used NYC RW dinner convention (3)."
+    },
+    {
+      "id": "olio-e-piu",
+      "name": "Olio e Più",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "3 Greenwich Ave., Manhattan, NY, 10014",
+      "lat": 40.733834,
+      "lng": -73.99968,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/46074-OlioePi%C3%B9-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/olio-e-piu"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/46074-OlioePi%C3%B9-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/olio-e-piu"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/olio-e-piu",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.olioepiu.com",
+      "status": "placed",
+      "notes": "No explicit Sunday-specific offer line was shown on the page (general terms say Sundays are optional per restaurant), so sunday_available left false pending confirmation."
+    },
+    {
+      "id": "hangawi",
+      "name": "HanGawi",
+      "neighborhood": "Koreatown",
+      "borough": "Manhattan",
+      "address": "12 E. 32nd St., Manhattan, NY, 10016",
+      "lat": 40.746794,
+      "lng": -73.984798,
+      "cuisine": "Vegan",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/hangawi"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "Michelin Guide New York — Bib Gourmand.",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/hangawi",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://hangawirestaurant.com",
+      "status": "placed",
+      "notes": "Page explicitly listed a $60 Sunday dinner offer alongside weekday $60 dinner."
+    },
+    {
+      "id": "socarrat-paella-bar-chelsea",
+      "name": "Socarrat Paella Bar - Chelsea",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "259 W. 19th St., Manhattan, NY, 10011",
+      "lat": 40.742395,
+      "lng": -73.999068,
+      "cuisine": "Spanish",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/38284-SocarratPaellaBar-Chelsea-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/socarrat-paella-bar-chelsea"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/socarrat-paella-bar-chelsea",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://socarratnyc.com/chelsea",
+      "status": "placed",
+      "notes": "Page explicitly listed $45 Sunday dinner matching weekday price."
+    },
+    {
+      "id": "altesi-downtown",
+      "name": "Altesi Downtown",
+      "neighborhood": "Soho",
+      "borough": "Manhattan",
+      "address": "200 Spring St., Manhattan, NY, 10012",
+      "lat": 40.725174,
+      "lng": -74.003353,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/altesi-downtown"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/altesi-downtown"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/altesi-downtown",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.altesinyc.com/downtown",
+      "status": "placed",
+      "notes": "Page explicitly listed matching Sunday lunch/brunch and Sunday dinner offers at same prices."
+    },
+    {
+      "id": "rynn-thai-restaurant-and-bar",
+      "name": "Rynn Thai Restaurant & Bar",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "309 E. Fifth St., Manhattan, NY, 10003",
+      "lat": 40.726737,
+      "lng": -73.9887,
+      "cuisine": "Thai",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/rynn-thai-restaurant-and-bar"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/rynn-thai-restaurant-and-bar"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/rynn-thai-restaurant-and-bar",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.rynnnyc.com",
+      "status": "placed",
+      "notes": "Page explicitly listed matching Sunday lunch/brunch and Sunday dinner offers."
+    },
+    {
+      "id": "perry-street",
+      "name": "Perry Street",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "176 Perry St., Manhattan, NY, 10014",
+      "lat": 40.734625,
+      "lng": -74.009288,
+      "cuisine": "American (New)",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/perry-street"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/perry-street",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://perrystrestaurant.com",
+      "status": "placed",
+      "notes": "Dinner-only, no lunch offered. Perry Street is chef Cedric Vongerichten's (son of Jean-Georges Vongerichten) restaurant; checked guide.michelin.com directly for a Perry Street-specific listing but the page returned HTTP 403 and could not be loaded, and web search results only confirmed stars for the separate Jean-Georges flagship restaurant, not Perry Street itself. Left tier as standard rather than assume based on chef reputation."
+    },
+    {
+      "id": "da-andrea-chelsea",
+      "name": "Da Andrea - Chelsea",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "160 Eighth Ave., Manhattan, NY, 10011",
+      "lat": 40.742176,
+      "lng": -74.000674,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/da-andrea-chelsea"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/da-andrea-chelsea"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/da-andrea-chelsea",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://daandreanyc.com/chelsea-location",
+      "status": "placed",
+      "notes": "Page listed an explicit $60 Sunday dinner but no Sunday lunch line item, so sunday_available for the lunch offer left false."
+    },
+    {
+      "id": "tarallucci-e-vino-union-square",
+      "name": "Tarallucci e Vino - Union Square",
+      "neighborhood": "Union Square",
+      "borough": "Manhattan",
+      "address": "15 E. 18th St., Manhattan, NY, 10003",
+      "lat": 40.738146,
+      "lng": -73.990795,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/30882-TaralluccieVino-UnionSquare-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/tarallucci-e-vino-union-square"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/30882-TaralluccieVino-UnionSquare-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/tarallucci-e-vino-union-square"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/tarallucci-e-vino-union-square",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.taralluccievino.net/union-square-location",
+      "status": "placed",
+      "notes": "Page listed an explicit $45 Sunday dinner but no Sunday lunch line item. Page itself noted courses weren't specified and recommended calling ahead to confirm details."
+    },
+    {
+      "id": "il-mulino-prime-soho",
+      "name": "Il Mulino Prime | Soho",
+      "neighborhood": "Soho",
+      "borough": "Manhattan",
+      "address": "331 West Broadway, Manhattan, NY, 10013",
+      "lat": 40.722193,
+      "lng": -74.003837,
+      "cuisine": "Steakhouse",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/il-mulino-prime-soho"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/il-mulino-prime-soho"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/il-mulino-prime-soho",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.imny.com/location/prime-soho",
+      "status": "placed",
+      "notes": "Lunch priced at $45 (above the usual $30 lunch tier) per the restaurant's own listing. Page explicitly listed matching Sunday lunch/brunch and Sunday dinner offers."
+    },
+    {
+      "id": "casa-felix",
+      "name": "Casa Felix",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "190 Seventh Ave., Manhattan, NY, 10011",
+      "lat": 40.742942,
+      "lng": -73.996573,
+      "cuisine": "Mexican",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": "https://nyc-tourism-public.s3.amazonaws.com/srw26/menus/51080-CasaFelix-menu.pdf",
+          "source_url": "https://www.nyctourism.com/restaurant-week/casa-felix"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/casa-felix",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.casafelixny.com",
+      "status": "placed",
+      "notes": "Page explicitly listed matching $45 Sunday dinner."
+    },
+    {
+      "id": "veselka-restaurant",
+      "name": "Veselka",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "144 Second Ave., Manhattan, NY, 10003",
+      "lat": 40.729117,
+      "lng": -73.987209,
+      "cuisine": "Ukrainian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/veselka-restaurant"
+        },
+        {
+          "meal": "dinner",
+          "price": 30,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/veselka-restaurant"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/veselka-restaurant",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://veselka.com",
+      "status": "placed",
+      "notes": "Unusual for RW: both lunch and dinner (and their Sunday equivalents) are priced at $30, per the page's own text ('All meals are priced at $30')."
+    },
+    {
+      "id": "philippe-by-philippe-chow-downtown",
+      "name": "Philippe by Philippe Chow Downtown",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "Dream Downtown, 355 W. 16th St., Manhattan, NY, 10011",
+      "lat": 40.741791,
+      "lng": -74.003087,
+      "cuisine": "Chinese",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/philippe-by-philippe-chow-downtown"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/philippe-by-philippe-chow-downtown"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/philippe-by-philippe-chow-downtown",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://philippechow.com/location/philippe-chow-downtown",
+      "status": "placed",
+      "notes": "Restaurant is located inside the Dream Downtown hotel. Sunday dinner is priced lower ($45) than weekday dinner ($60), per the page; represented as a separate offer entry restricted to Sunday since the price differs from the weekday rate."
+    },
+    {
+      "id": "narkara",
+      "name": "Narkara",
+      "neighborhood": "Union Square",
+      "borough": "Manhattan",
+      "address": "5 E. 17th St., New York, NY 10003",
+      "lat": 40.737834582694,
+      "lng": -73.991870784515,
+      "cuisine": "Thai",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/narkara"
+        },
+        {
+          "meal": "lunch",
+          "price": 60,
+          "courses": 2,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/narkara"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/narkara",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.narkaranyc.com",
+      "status": "placed",
+      "notes": "Sunday offer is listed as 'Sunday Lunch/Brunch' at $60; represented here as a lunch offer restricted to Sunday."
+    },
+    {
+      "id": "olio-e-piu-east-village",
+      "name": "Olio e Più East Village",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "106 Third Ave., New York, NY 10003",
+      "lat": 40.732683697192,
+      "lng": -73.987713712889,
+      "cuisine": "Italian",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/olio-e-piu-east-village"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/olio-e-piu-east-village"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/olio-e-piu-east-village",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.olioepiu.com/location-nyc-east-village",
+      "status": "placed",
+      "notes": "Page did not explicitly confirm Sunday availability for this location, so sunday_available set to false pending confirmation."
+    },
+    {
+      "id": "ishq",
+      "name": "Ishq",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "202 Avenue A, New York, NY 10009",
+      "lat": 40.729445785767,
+      "lng": -73.980976622881,
+      "cuisine": "Indian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/ishq"
+        }
+      ],
+      "tier": "bib_gourmand_or_critics_pick",
+      "tier_source": "Michelin Guide New York — Bib Gourmand.",
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/ishq",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.ishq.nyc",
+      "status": "placed",
+      "notes": null
+    },
+    {
+      "id": "laut",
+      "name": "Laut",
+      "neighborhood": "Union Square",
+      "borough": "Manhattan",
+      "address": "15 E. 17th St., New York, NY 10003",
+      "lat": 40.737574537381,
+      "lng": -73.991241594567,
+      "cuisine": "Asian Fusion",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/laut"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/laut",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://lautnyc.com",
+      "status": "placed",
+      "notes": "Page states Sunday availability is 'at restaurant's discretion' / not explicitly confirmed, so sunday_available set to false pending confirmation with restaurant. Dinner-only offer (no lunch listed)."
+    },
+    {
+      "id": "miru",
+      "name": "Miru",
+      "neighborhood": "Chelsea",
+      "borough": "Manhattan",
+      "address": "Pier 57 at Hudson River Park, 25 Eleventh Ave., New York, NY 10011",
+      "lat": 40.743988563538,
+      "lng": -74.008647003088,
+      "cuisine": "Japanese / Sushi",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/miru"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/miru"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429; address normalized to 25 Eleventh Ave for geocoding)",
+      "geocode_confidence": "approximate",
+      "source_url": "https://www.nyctourism.com/restaurant-week/miru",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://mirunyc.com",
+      "status": "placed",
+      "notes": "Sunday availability listed as at restaurant's discretion, not explicitly confirmed. Coordinates point to the Pier 57 building at 25 Eleventh Ave, same as ofCorsica which shares this address."
+    },
+    {
+      "id": "seahorse",
+      "name": "Seahorse",
+      "neighborhood": "Union Square",
+      "borough": "Manhattan",
+      "address": "201 Park Ave. South, New York, NY 10003",
+      "lat": 40.736578924036,
+      "lng": -73.988913704542,
+      "cuisine": "Seafood",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/seahorse"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/seahorse"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/seahorse",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.seahorsenyc.com",
+      "status": "placed",
+      "notes": null
+    },
+    {
+      "id": "veeray-da-dhaba",
+      "name": "Veeray da Dhaba",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "222 First Ave., New York, NY 10009",
+      "lat": 40.730909763408,
+      "lng": -73.982808880839,
+      "cuisine": "Indian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 30,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/veeray-da-dhaba"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/veeray-da-dhaba",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.veeraydadhaba.com",
+      "status": "placed",
+      "notes": "Kept tier as standard: the nyctourism.com card notes the restaurant was 'founded by Michelin-starred chef Hemant Mathur,' which is a personal accolade of the chef (likely from a different, earlier restaurant), not confirmed evidence that Veeray da Dhaba itself currently holds a Michelin star or other guide recognition — no citable current Michelin/critics-pick listing found for this restaurant itself."
+    },
+    {
+      "id": "the-kunjip",
+      "name": "The Kunjip",
+      "neighborhood": "Koreatown",
+      "borough": "Manhattan",
+      "address": "32 W. 32nd St., New York, NY 10001",
+      "lat": 40.747482319938,
+      "lng": -73.986430698043,
+      "cuisine": "Korean",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/the-kunjip"
+        },
+        {
+          "meal": "dinner",
+          "price": 45,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/the-kunjip"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/the-kunjip",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.kunjip.nyc",
+      "status": "placed",
+      "notes": "Page did not explicitly confirm Sunday availability for this location, so sunday_available set to false pending confirmation."
+    },
+    {
+      "id": "arvine",
+      "name": "Arvine",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "19 Greenwich Ave., New York, NY 10014",
+      "lat": 40.734538178233,
+      "lng": -73.999978853453,
+      "cuisine": "American (New)",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": false,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/arvine"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/arvine",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.arvine.com",
+      "status": "placed",
+      "notes": "Page did not explicitly confirm Sunday availability, so sunday_available set to false pending confirmation. Dinner-only offer (no lunch listed)."
+    },
+    {
+      "id": "oncheon",
+      "name": "Oncheon",
+      "neighborhood": "Koreatown",
+      "borough": "Manhattan",
+      "address": "312 Fifth Ave., New York, NY 10001",
+      "lat": 40.746956934595,
+      "lng": -73.985725891997,
+      "cuisine": "Korean",
+      "offers": [
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/oncheon"
+        },
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/oncheon"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/oncheon",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://oncheonnyc.com",
+      "status": "placed",
+      "notes": null
+    },
+    {
+      "id": "sozo-sip-bar-omakase",
+      "name": "SoZo Sip Bar + Omakase",
+      "neighborhood": "East Village",
+      "borough": "Manhattan",
+      "address": "319 Bowery, New York, NY 10003",
+      "lat": 40.72537111559,
+      "lng": -73.99207814325,
+      "cuisine": "Japanese / Sushi",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/sozo-sip-bar-omakase"
+        },
+        {
+          "meal": "lunch",
+          "price": 60,
+          "courses": 2,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/sozo-sip-bar-omakase"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/sozo-sip-bar-omakase",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.sozo-nyc.com",
+      "status": "placed",
+      "notes": "Sunday offer listed as 'Sunday Lunch/Brunch' at $60; represented here as a lunch offer restricted to Sunday. No regular weekday lunch offer found on the page."
+    },
+    {
+      "id": "nuyores",
+      "name": "Nuyores",
+      "neighborhood": "West Village",
+      "borough": "Manhattan",
+      "address": "154 W. 13th St., New York, NY 10011",
+      "lat": 40.737363784923,
+      "lng": -73.999152653219,
+      "cuisine": "Peruvian",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/nuyores"
+        },
+        {
+          "meal": "lunch",
+          "price": 30,
+          "courses": 2,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/nuyores"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/nuyores",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.nuyores.com",
+      "status": "placed",
+      "notes": "$30 Sunday Lunch/Brunch represented as a lunch offer restricted to Sunday; no regular weekday lunch offer found on the page."
+    },
+    {
+      "id": "bar-mercer",
+      "name": "Bar Mercer",
+      "neighborhood": "Soho",
+      "borough": "Manhattan",
+      "address": "25 W. Houston St., New York, NY 10012",
+      "lat": 40.725906879579,
+      "lng": -73.997975188443,
+      "cuisine": "Gastropub",
+      "offers": [
+        {
+          "meal": "dinner",
+          "price": 60,
+          "courses": 3,
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/bar-mercer"
+        },
+        {
+          "meal": "lunch",
+          "price": 45,
+          "courses": 2,
+          "days": [
+            "Sun"
+          ],
+          "sunday_available": true,
+          "menu_url": null,
+          "source_url": "https://www.nyctourism.com/restaurant-week/bar-mercer"
+        }
+      ],
+      "tier": "standard",
+      "tier_source": null,
+      "rating": null,
+      "review_count": null,
+      "geocode_source": "US Census Bureau Geocoder (fallback — OpenStreetMap Nominatim returned persistent HTTP 429)",
+      "geocode_confidence": "matched",
+      "source_url": "https://www.nyctourism.com/restaurant-week/bar-mercer",
+      "last_verified": "2026-07-21",
+      "reservation_url": "https://www.barmercer.com",
+      "status": "placed",
+      "notes": "$45 Sunday Lunch/Brunch represented as a lunch offer restricted to Sunday; no regular weekday lunch offer found on the page."
+    }
+  ]
+}
