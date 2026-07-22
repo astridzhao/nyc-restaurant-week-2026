@@ -86,7 +86,9 @@ function render() {
   elements.totalCount.textContent = state.restaurants.length.toLocaleString();
   elements.placedCount.textContent = placed.length.toLocaleString();
   elements.unplacedCount.textContent = unplaced.length.toLocaleString();
-  elements.datasetNote.textContent = datasetNoteText(placed.length, unplaced.length);
+  const noteText = datasetNoteText();
+  elements.datasetNote.textContent = noteText;
+  elements.datasetNote.hidden = !noteText;
 
   renderTierFilters();
   renderMarkers(placed);
@@ -100,11 +102,11 @@ function render() {
   }
 }
 
-function datasetNoteText(placedCount, unplacedCount) {
+function datasetNoteText() {
   if (state.restaurants.length === 0) {
     return "No restaurants have been loaded yet. Add source records to restaurants.json.";
   }
-  return `${placedCount} records render as markers. ${unplacedCount} remain listed for data-quality follow-up.`;
+  return "";
 }
 
 function renderTierFilters() {
